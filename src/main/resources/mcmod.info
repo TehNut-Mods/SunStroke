@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sunstroke",
+  "name": "SunStroke",
+  "description": "Brings out your vampiric side.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "http://tehnut.info/",
+  "updateUrl": "",
+  "authorList": [ "TehNut" ],
+  "credits": "Aeonica on MCF for requesting it.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
