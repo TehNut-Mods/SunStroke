@@ -18,7 +18,7 @@ public class CommandDayCount extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender sender, String[] args) {
-        sender.addChatMessage(new ChatComponentText("Current day : " + Utils.getWorldDay(sender.getEntityWorld())));
-        sender.addChatMessage(new ChatComponentText("Current time : " + Utils.getWorldTime(sender.getEntityWorld())));
+        sender.addChatMessage(new ChatComponentText(Utils.localize("chat.sunstroke.current.day") + " : " + Utils.getWorldDay(sender.getEntityWorld())));
+        sender.addChatMessage(new ChatComponentText(Utils.localize("chat.sunstroke.current.time") + " : " + Utils.getWorldTime(sender.getEntityWorld())));
     }
 }

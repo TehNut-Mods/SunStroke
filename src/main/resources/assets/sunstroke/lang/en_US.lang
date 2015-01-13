@@ -1,1 +1,6 @@
+// Chat messages
+chat.sunstroke.current.time=Current time
+chat.sunstroke.current.day=Current day
+
+// Death messages
 death.attack.sunStroke=%s fell asleep while tanning.
