@@ -3,9 +3,12 @@ package tehnut.sunstroke;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import tehnut.sunstroke.command.CommandDayCount;
+import tehnut.sunstroke.util.EventHandler;
 
 import java.io.File;
 
@@ -24,5 +27,10 @@ public class SunStroke {
 		ConfigHandler.init(config);
 
 		FMLCommonHandler.instance().bus().register(new EventHandler());
+	}
+
+	@Mod.EventHandler
+	public void onServerStarting(FMLServerStartingEvent event)	{
+		event.registerServerCommand(new CommandDayCount());
 	}
 }
