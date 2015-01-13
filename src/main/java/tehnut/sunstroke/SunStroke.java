@@ -8,6 +8,7 @@ import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tehnut.sunstroke.command.CommandDayCount;
+import tehnut.sunstroke.command.CommandDaysLeft;
 import tehnut.sunstroke.util.EventHandler;
 
 import java.io.File;
@@ -32,5 +33,6 @@ public class SunStroke {
 	@Mod.EventHandler
 	public void onServerStarting(FMLServerStartingEvent event)	{
 		event.registerServerCommand(new CommandDayCount());
+		event.registerServerCommand(new CommandDaysLeft());
 	}
 }
