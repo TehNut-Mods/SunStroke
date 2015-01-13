@@ -1,5 +1,6 @@
 package tehnut.sunstroke.util;
 
+import net.minecraft.util.BlockPos;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.EnumDifficulty;
@@ -19,7 +20,7 @@ public class Utils {
     }
 
     public static boolean shouldPlayerSunStroke(World world, int x, int y, int z) {
-        return world.canBlockSeeTheSky(x, y, z) && world.isDaytime();
+        return world.canBlockSeeSky(new BlockPos(x, y, z)) && world.isDaytime();
     }
 
     public static int getDaysLeft(World world) {
@@ -30,7 +31,7 @@ public class Utils {
     }
 
     public static boolean isWorldPeaceful(World world) {
-        return world.difficultySetting == EnumDifficulty.PEACEFUL;
+        return world.getDifficulty() == EnumDifficulty.PEACEFUL;
     }
 
     public static String localize(String unloc) {

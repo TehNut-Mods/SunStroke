@@ -1,8 +1,8 @@
 package tehnut.sunstroke.util;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 import tehnut.sunstroke.ConfigHandler;
 
 public class EventHandler {
