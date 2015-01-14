@@ -1,6 +1,7 @@
 // Chat messages
 chat.sunstroke.current.time=Current time : %s
 chat.sunstroke.current.day=Current day : %s
+chat.sunstroke.current.light=Light level : %s
 chat.sunstroke.remaining.day=Days remaining : %s
 
 // Death messages
